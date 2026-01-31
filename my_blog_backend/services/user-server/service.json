@@ -1,0 +1,67 @@
+{
+    "service_id": "user-server",
+    "service_name": "用户服务器",
+    "version": "1.0.0",
+    "description": "负责用户注册、登录、权限管理和资产管理",
+    "database": {
+        "type": "sqlite",
+        "name": "user-server"
+    },
+    "apis": [
+        {
+            "path": "/register",
+            "method": "POST",
+            "description": "用户注册"
+        },
+        {
+            "path": "/login",
+            "method": "POST",
+            "description": "用户登录"
+        },
+        {
+            "path": "/users/{user_id}",
+            "method": "GET",
+            "description": "获取用户信息"
+        },
+        {
+            "path": "/users/{user_id}",
+            "method": "PUT",
+            "description": "更新用户信息"
+        },
+        {
+            "path": "/users/{user_id}/permissions",
+            "method": "GET",
+            "description": "获取用户权限"
+        },
+        {
+            "path": "/users/{user_id}/pages",
+            "method": "GET",
+            "description": "获取用户可访问页面"
+        },
+        {
+            "path": "/users/{user_id}/tasks",
+            "method": "GET",
+            "description": "获取用户可访问任务"
+        },
+        {
+            "path": "/users/{user_id}/assets",
+            "method": "GET",
+            "description": "获取用户资产列表"
+        },
+        {
+            "path": "/users/{user_id}/assets",
+            "method": "POST",
+            "description": "创建用户资产"
+        },
+        {
+            "path": "/users/{user_id}/assets/{asset_id}",
+            "method": "PUT",
+            "description": "更新用户资产"
+        },
+        {
+            "path": "/users/{user_id}/assets/{asset_id}",
+            "method": "DELETE",
+            "description": "删除用户资产"
+        }
+    ]
+}

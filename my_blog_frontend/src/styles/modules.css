@@ -1,0 +1,83 @@
+/* 模块样式 */
+/* 模块样式将在各自模块中定义 */
+
+/* 探索页面样式 */
+:root {
+  /* 卡片背景色 - 半透明以增强磨砂玻璃效果 */
+  --card-background: rgba(255, 255, 255, 0.7);
+  /* 边框颜色 */
+  --border-color: var(--neutral-extra-light-gray);
+  /* 悬停背景色 */
+  --hover-background: rgba(255, 255, 255, 0.8);
+  /* 主色调浅色 */
+  --primary-color-light: rgba(198, 40, 40, 0.1);
+  /* 卡片阴影 */
+  --shadow-card: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --shadow-card-hover: 0 8px 24px rgba(0, 0, 0, 0.15);
+  --shadow-card-active: 0 8px 24px rgba(0, 0, 0, 0.15);
+  /* 背景浅色 */
+  --background-light: var(--neutral-extra-light-gray);
+  /* 文本静音色 */
+  --text-muted: var(--neutral-light-gray);
+}
+
+/* 探索页面布局 */
+.explore-page {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.explore-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.explore-main {
+  display: flex;
+  gap: 2rem;
+  flex: 1;
+}
+
+/* 响应式设计 */
+@media (max-width: 1200px) {
+  .explore-page {
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+  
+  .explore-main {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .explore-page {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
+  
+  .explore-main {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+/* 主题切换时的样式调整 */
+body.theme-china-red {
+  --primary-color-light: rgba(198, 40, 40, 0.1);
+}
+
+body.theme-danqing-blue {
+  --primary-color-light: rgba(13, 71, 161, 0.1);
+}
+
+body.theme-fenxia-purple {
+  --primary-color-light: rgba(123, 31, 162, 0.1);
+}

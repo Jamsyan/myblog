@@ -1,0 +1,37 @@
+{
+  "name": "my_blog_frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint src/ --ext .vue,.js",
+    "lint:fix": "eslint src/ --ext .vue,.js --fix",
+    "format": "prettier --write \"**/*.{js,vue,css,html}\"",
+    "format:check": "prettier --check \"**/*.{js,vue,css,html}\"",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "dependencies": {
+    "gsap": "^3.14.2",
+    "lucide-vue-next": "^0.563.0",
+    "three": "^0.182.0",
+    "vue": "^3.5.24",
+    "vue-router": "^4.6.4"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.28.6",
+    "@vitejs/plugin-vue": "^6.0.1",
+    "@vitest/coverage-v8": "^4.0.18",
+    "eslint": "^9.39.2",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.5",
+    "eslint-plugin-vue": "^10.7.0",
+    "prettier": "^3.8.1",
+    "vite": "^7.2.4",
+    "vitest": "^4.0.18"
+  }
+}

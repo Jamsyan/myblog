@@ -1,0 +1,94 @@
+# Logs
+logs
+log
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+*.info
+*.warning
+*.error
+
+# Dependencies
+node_modules
+.pnp
+.pnp.js
+.venv
+
+# Build outputs
+dist
+dist-ssr
+build
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Cache
+.cache
+.parcel-cache
+.next
+.nuxt
+.vuepress/dist
+.temp
+
+# Package managers
+
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+.idea
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Build files
+*.tsbuildinfo
+
+# Cache
+.cache
+.parcel-cache
+.next
+.nuxt
+.vuepress/dist
+.temp
+
+# Database
+DATABASE.sqlite
+*.db
+*.sqlite
+my_blog_backend/logs.debug_info
+
+
+*.7z
+.trae/
+my_blog_backend/data
+

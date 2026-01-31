@@ -1,0 +1,61 @@
+/* 组件样式 */
+/* 组件样式将在各自组件中使用scoped样式 */
+
+/* 自定义滚动条样式 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color);
+}
+
+/* 深色主题滚动条 */
+.dark-theme ::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.dark-theme ::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.dark-theme ::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color);
+}
+
+/* 中国红主题滚动条 */
+.theme-china-red ::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color);
+}
+
+/* 丹青蓝主题滚动条 */
+.theme-danqing-blue ::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color);
+}
+
+/* 粉霞紫主题滚动条 */
+.theme-fenxia-purple ::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color);
+}
+
+/* 隐藏滚动条但保留滚动功能 */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}

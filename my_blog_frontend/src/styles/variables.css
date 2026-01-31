@@ -1,0 +1,198 @@
+/* 主题色系 */
+/* 中国红主题 */
+body.theme-china-red {
+  --primary-color: #C62828;
+  --primary-rgb: 198, 40, 40;
+  --primary-hover: #E53935;
+  --secondary-color: #E53935;
+  --secondary-rgb: 229, 57, 53;
+  --accent-color: #B71C1C;
+  --dark-color: #880E4F;
+  --light-color: #FFCDD2;
+  --background-color: #FBE9E7;
+  --card-background: rgba(255, 240, 240, 0.4);
+  --text-primary: #263238;
+  --text-secondary: #666666;
+  --warning-color: #FFA726;
+  --success-color: #FFEE58;
+}
+
+/* 丹青蓝主题 */
+body.theme-danqing-blue {
+  --primary-color: #0D47A1;
+  --primary-rgb: 13, 71, 161;
+  --primary-hover: #1976D2;
+  --secondary-color: #1976D2;
+  --secondary-rgb: 25, 118, 210;
+  --accent-color: #42A5F5;
+  --dark-color: #0A2463;
+  --light-color: #90CAF9;
+  --background-color: #E3F2FD;
+  --card-background: rgba(230, 245, 255, 0.4);
+  --text-primary: #1A237E;
+  --text-secondary: #666666;
+  --warning-color: #FFA726;
+  --success-color: #FFEE58;
+}
+
+/* 粉霞紫主题 */
+body.theme-fenxia-purple {
+  --primary-color: #7B1FA2;
+  --primary-rgb: 123, 31, 162;
+  --primary-hover: #9C27B0;
+  --secondary-color: #9C27B0;
+  --secondary-rgb: 156, 39, 176;
+  --accent-color: #BA68C8;
+  --dark-color: #4A148C;
+  --light-color: #F3E5F5;
+  --background-color: #F3E5F5;
+  --card-background: rgba(248, 240, 250, 0.4);
+  --text-primary: #4A148C;
+  --text-secondary: #666666;
+  --warning-color: #FFA726;
+  --success-color: #FFEE58;
+}
+
+/* 默认主题（中国红） */
+:root {
+  --primary-color: #C62828;
+  --primary-rgb: 198, 40, 40;
+  --primary-hover: #E53935;
+  --secondary-color: #E53935;
+  --secondary-rgb: 229, 57, 53;
+  --accent-color: #B71C1C;
+  --dark-color: #880E4F;
+  --light-color: #FFCDD2;
+  --background-color: #FBE9E7;
+  --card-background: rgba(255, 240, 240, 0.4);
+  --text-primary: #263238;
+  --text-secondary: #666666;
+  --warning-color: #FFA726;
+  --success-color: #FFEE58;
+}
+
+/* 中性色 */
+:root {
+  --neutral-black: #000000;
+  --neutral-dark-gray: #333333;
+  --neutral-gray: #666666;
+  --neutral-light-gray: #999999;
+  --neutral-extra-light-gray: #EEEEEE;
+  --neutral-white: #FFFFFF;
+}
+
+/* 功能色 */
+:root {
+  --success-color: #4CAF50;
+  --warning-color: #FFC107;
+  --error-color: #F44336;
+  --info-color: #2196F3;
+}
+
+/* 深色主题 */
+.dark-theme {
+  --card-background: rgba(26, 32, 44, 0.4);
+}
+
+/* 间距系统 */
+:root {
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 48px;
+  --spacing-3xl: 64px;
+}
+
+/* 字体系统 */
+:root {
+  --font-family-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+  --font-family-mono: 'SF Mono', Monaco, Inconsolata, 'Roboto Mono', Consolas, 'Courier New', monospace;
+  
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-base: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 20px;
+  --font-size-2xl: 24px;
+  --font-size-3xl: 30px;
+  --font-size-4xl: 36px;
+  
+  --line-height-tight: 1.25;
+  --line-height-snug: 1.375;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.625;
+  --line-height-loose: 2;
+  
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+}
+
+/* 阴影系统 */
+:root {
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  --shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+  --shadow-elevation-1: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  --shadow-elevation-2: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  --shadow-elevation-3: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  --shadow-elevation-4: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  --shadow-elevation-5: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  --shadow-avatar: 0 4px 8px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-button: 0 2px 4px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+  --shadow-button-hover: 0 4px 8px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.08);
+  --shadow-dropdown: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* 过渡系统 */
+:root {
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.2s ease;
+  --transition-slow: 0.3s ease;
+  --transition-slower: 0.4s ease;
+  --transition-elastic: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  --transition-bounce: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  --transition-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-emphasis: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  --transition-standard: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --transition-deceleration: cubic-bezier(0.075, 0.82, 0.165, 1);
+  --transition-acceleration: cubic-bezier(0.47, 0, 0.745, 0.715);
+  --transition-sharp: cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+/* 断点系统 */
+:root {
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+}
+
+/* 圆角系统 */
+:root {
+  --border-radius-xs: 6px;
+  --border-radius-sm: 10px;
+  --border-radius-md: 16px;
+  --border-radius-lg: 20px;
+  --border-radius-xl: 24px;
+  --border-radius-2xl: 28px;
+  --border-radius-3xl: 32px;
+  --border-radius-4xl: 40px;
+  --border-radius-5xl: 48px;
+  --border-radius-full: 9999px;
+  --border-radius-pill: 9999px;
+  --border-radius-button: 20px;
+  --border-radius-card: 24px;
+  --border-radius-input: 16px;
+  --border-radius-dropdown: 20px;
+  --border-radius-avatar: 50%;
+  --border-radius-modal: 28px;
+  --border-radius-panel: 24px;
+}

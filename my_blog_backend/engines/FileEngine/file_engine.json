@@ -1,0 +1,56 @@
+{
+  "service_id": "FileEngine",
+  "service_name": "文件处理引擎",
+  "version": "1.0.0",
+  "engine_type": "kernel",
+  "description": "用于处理帖子和评论的文件存储与管理，支持MD和HTML格式的帖子存储，以及冷热分离的评论管理策略",
+  "apis": [
+    {
+      "path": "/health",
+      "method": "GET",
+      "handler": "health_check",
+      "description": "健康检查接口"
+    },
+    {
+      "path": "/create_post",
+      "method": "POST",
+      "handler": "create_post",
+      "description": "创建帖子接口"
+    },
+    {
+      "path": "/get_post",
+      "method": "GET",
+      "handler": "get_post",
+      "description": "获取帖子接口"
+    },
+    {
+      "path": "/update_post",
+      "method": "PUT",
+      "handler": "update_post",
+      "description": "更新帖子接口"
+    },
+    {
+      "path": "/delete_post",
+      "method": "DELETE",
+      "handler": "delete_post",
+      "description": "删除帖子接口"
+    },
+    {
+      "path": "/add_comment",
+      "method": "POST",
+      "handler": "add_comment",
+      "description": "添加评论接口"
+    },
+    {
+      "path": "/get_comments",
+      "method": "GET",
+      "handler": "get_comments",
+      "description": "获取评论接口"
+    }
+  ],
+  "database": {
+    "type": "sqlite",
+    "name": "file_engine"
+  },
+  "dependencies": []
+}

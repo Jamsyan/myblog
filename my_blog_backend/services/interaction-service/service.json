@@ -1,0 +1,42 @@
+{
+    "service_id": "interaction-service",
+    "service_name": "互动管理服务",
+    "version": "1.0.0",
+    "description": "负责帖子的评论和点赞功能管理",
+    "database": {
+        "type": "sqlite",
+        "name": "user-server"
+    },
+    "apis": [
+        {
+            "path": "/posts/{post_id}/like",
+            "method": "POST",
+            "description": "点赞帖子"
+        },
+        {
+            "path": "/posts/{post_id}/like",
+            "method": "DELETE",
+            "description": "取消点赞"
+        },
+        {
+            "path": "/posts/{post_id}/likes",
+            "method": "GET",
+            "description": "获取帖子点赞数"
+        },
+        {
+            "path": "/posts/{post_id}/comments",
+            "method": "POST",
+            "description": "添加评论"
+        },
+        {
+            "path": "/posts/{post_id}/comments",
+            "method": "GET",
+            "description": "获取帖子评论"
+        },
+        {
+            "path": "/comments/{comment_id}",
+            "method": "DELETE",
+            "description": "删除评论"
+        }
+    ]
+}

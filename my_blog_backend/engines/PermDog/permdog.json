@@ -1,0 +1,20 @@
+{
+  "service_id": "permdog",
+  "service_name": "权限引擎",
+  "version": "1.0.0",
+  "engine_type": "kernel",
+  "description": "用于管理系统权限体系的引擎，支持权限查询、权限检查和权限配置管理",
+  "apis": [
+    {
+      "path": "/health",
+      "method": "GET",
+      "handler": "health_check",
+      "description": "健康检查接口"
+    }
+  ],
+  "database": {
+    "type": "sqlite",
+    "name": "permdog"
+  },
+  "dependencies": []
+}
